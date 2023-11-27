@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- link:css 치면 바로 생성됨-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+            <div class="status-bar__column"></div>
+            <!-- 이런식으로 column 네임 쓰는 것을 추천
+            뒤에도 여러가지 column이 나오기 때문에 css를 읽을 때 어떤
+            컬럼을 가리키는지 알기가 어려울 수 있음
+            -->
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+                <!--to Do:wifi Icon -->
+            <div class="status-bar__column"></div>
+                <span>18:43</span>
+            <div class="status-bar__column"></div>
+                <span>100%</span>
+                <i class="fa-solid fa-battery-full"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <!-- Battery Icon-->
+                <!-- Lightning Icon-->
+
+                <!-- BEM(block Element Modifier) 규칙
+                많은 사람들이 지키는 규칙
+                좀 더 쉽게 읽히는 CSS를 가지는 것
+                
+                btn -block
+
+                때떄로 블록은 modifier을 가짐
+
+                프로그래밍을 할 때, 때때로 어떤 때 id를 사용했는지
+                어떤 때 class를 사용했는지 헷갈렸다.
+                그래서 프로그래머들은 그냥 전부 class로 정의하기로 하였음
+                이 방법으로 css를 작성하면 .(dot) 으로 작성하는 것을 알고 있기 때문
+                (계속 html에서 class인지 id인지 찾을 필요 x)
+
+                 이름을 작성할 때  BEM을 지키면서 작성해라
+
+                 이렇게 작성하면 코드 읽기가 매우 쉬워진다
+
+                 문제점: 클래스가 매우 커질 수 있음
+
+
+                 니코가 자주 쓰는 사이트
+                 1.heroicons -> 아이콘 사이트. 복사해서 사용
+                 2.Font Awesome
+
+                 스크립트는 항상 마지막에 있어야 한다(body닫기 전)
+                -->
+
+
+
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcom to kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a kokoa Account, log in with your account</p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <a href="#">Find kokoa Account or Password</a>
+    </form>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/469742a5eb.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
